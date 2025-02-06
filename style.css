@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #966aac;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chatbot-toggler {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1dbcbf;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chatbot-toggler span {
+    font-size: 20px;
+  }
+  
+  .chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    height: 400px;
+    overflow: hidden;
+    z-index: 9999;
+  }
+  
+  .chatbot.active {
+    display: flex;
+  }
+  
+  header {
+    background-color: #14acce;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .close-btn {
+    cursor: pointer;
+  }
+  
+  .chatbox {
+    list-style: none;
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .chat {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .chat.incoming {
+    flex-direction: row;
+  }
+  
+  .chat.outgoing {
+    flex-direction: row-reverse;
+  }
+  
+  .chat p {
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    max-width: 70%;
+  }
+  
+  .chat.incoming p {
+    background-color: #e0e0e0;
+  }
+  
+  .chat.outgoing p {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #f7f7f7;
+  }
+  
+  .chat-input textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: none;
+  }
+  
+  #send-btn {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+
+
+
